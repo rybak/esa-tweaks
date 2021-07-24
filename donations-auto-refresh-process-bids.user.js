@@ -81,7 +81,8 @@
 	}
 
 	function addLastAutoRefreshTimeDisplay() {
-		$('#id_loading').before('<span id="' + LAST_REFRESH_TIME_DISPLAY_ID + '"></span> ');
+		$('#id_loading').before('<span id="' + LAST_REFRESH_TIME_DISPLAY_ID + '"' +
+			' title="Timestamp of the last auto-refresh."></span> ');
 		log("Added #" + LAST_REFRESH_TIME_DISPLAY_ID + " to the layout");
 	}
 
