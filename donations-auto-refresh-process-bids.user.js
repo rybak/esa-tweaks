@@ -4,7 +4,7 @@
 // @author       https://github.com/rybak/
 // @homepageURL  https://github.com/rybak/esa-tweaks
 // @updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-auto-refresh-process-bids.user.js
-// @version      1.1
+// @version      1.2
 // @match        https://donations.esamarathon.com/admin/process_pending_bids
 // @icon         https://www.google.com/s2/favicons?domain=esamarathon.com
 // @namespace    http://tampermonkey.net/
@@ -17,6 +17,7 @@
 	const AUTO_REFRESH_DELAY_MILLIS = 5000;
 	const AUTO_REFRESH_CHECKBOX_ID = 'id_autoRefresh';
 	const LAST_REFRESH_TIME_DISPLAY_ID = 'esaTweaksLastAutoRefresh';
+	const USE_ISO_8601 = false;
 
 	function log(msg) {
 		console.log("[ESA auto-refresh processing bids] " + msg);
@@ -86,8 +87,9 @@
 		log("Added #" + LAST_REFRESH_TIME_DISPLAY_ID + " to the layout");
 	}
 
+	// Format a Date using ISO 8601 format.
 	// https://stackoverflow.com/a/17415677/1083697
-	function formatTimestamp(date) {
+	function formatTimestampIso8601(date) {
 		var tzo = -date.getTimezoneOffset();
 		var dif = tzo >= 0 ? '+' : '-';
 		var pad = function(num) {
@@ -103,6 +105,14 @@
 			':' + pad(date.getSeconds()) +
 			dif + pad(tzo / 60) +
 			':' + pad(tzo % 60);
+	}
+
+	function formatTimestamp(date) {
+		if (USE_ISO_8601) {
+			return formatTimestampIso8601(date);
+		} else {
+			return date.toLocaleString();
+		}
 	}
 
 	function updateLastAutoRefreshTimeDisplay() {
