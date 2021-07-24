@@ -63,7 +63,8 @@
 			warn("Could not find 'Refresh' button");
 			return;
 		}
-		const newHtml = $('<label for="' + AUTO_REFRESH_CHECKBOX_ID + '" style="margin-left:0.3em;">Auto-Refresh?</label>' +
+		const newHtml = $('<label for="' + AUTO_REFRESH_CHECKBOX_ID + '"' +
+			' style="margin-left:0.3em;">Auto-Refresh?</label>' +
 			'<input type="checkbox" id="' + AUTO_REFRESH_CHECKBOX_ID + '">');
 		refreshButton.after(newHtml);
 		const checkbox = $('#' + AUTO_REFRESH_CHECKBOX_ID);
