@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ESA donations :: tweak process bids layout
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      1.0
 // @description  Remove "br" tags from the layout to reduce used vertical space.
 // @author       https://github.com/rybak
 // @homepageURL  https://github.com/rybak/esa-tweaks

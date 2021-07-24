@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ESA donations :: auto-refresh processing bids
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      1.0
 // @description  Add auto-refreshing for /admin/process_pending_bids
 // @author       https://github.com/rybak/
 // @homepageURL  https://github.com/rybak/esa-tweaks

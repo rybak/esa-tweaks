@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ESA donations :: shortcuts
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      1.0
 // @description  Shortcuts to help reading and screening donations on ESA
 // @author       https://github.com/rybak
 // @homepageURL  https://github.com/rybak/esa-tweaks
