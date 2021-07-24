@@ -7,6 +7,8 @@ the terms of the MIT Licence. See [LICENSE.txt](LICENSE.txt) for details.
 ## User styles
 
 ### Dark mode
+![Dark mode demo screenshot](./screenshots/dark-mode.png)
+
 Dark mode for processing and reading pages with some ESAMarathon trademark
 purple and yellow colours.
 
@@ -32,6 +34,8 @@ https://github.com/rybak/esa-tweaks/raw/main/donations-table-tweaks.user.css
 ## User scripts
 
 ### Auto-refresh process bids
+![Auto-refresh process bids screenshot](./screenshots/auto-refresh-process-bids.png)
+
 Adds a "Auto-refresh?" checkbox to the `/process_pending_bids` page, similar to
 the existing builtin checkbox on `/process_donations` page.
 
