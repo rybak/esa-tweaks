@@ -1,3 +1,11 @@
+/* ==UserStyle==
+@name         Table style tweaks for ESA donations
+@author       https://github.com/rybak
+@version      1.0.0
+@license      MIT
+@namespace    github.com/openstyles/stylus
+==/UserStyle== */
+
 @-moz-document
 url-prefix("https://donations.esamarathon.com/admin/process_pending_bids"),
 url-prefix("https://donations.esamarathon.com/admin/process_donations"),
