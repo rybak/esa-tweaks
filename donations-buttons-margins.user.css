@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name         ESA donations :: user friendly buttons
+@name         ESA donations :: user friendly button margins
 @author       https://github.com/rybak
 @homepageURL  https://github.com/rybak/esa-tweaks
 @updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-buttons-margins.user.css
-@version      1.2
+@version      1.3
 @license      MIT
 @namespace    github.com/openstyles/stylus
 ==/UserStyle== */
@@ -17,8 +17,8 @@
 		margin-top: 0.5em;
 		margin-bottom: 0.5em;
 	}
-	#id_result_set tr > td:nth-child(4) > button:nth-child(2) {
-		margin-left: 2em;
+	#id_result_set tr > td:nth-child(4) > button:nth-child(1) {
+		margin-right: 2em;
 	}
 }
 
@@ -26,11 +26,11 @@
 	/*
 	 * Make buttons more user-friendly on /admin/process_donations
 	 */
-	#id_result_set tr > td:nth-child(4) {
+	#id_result_set tr > td:nth-child(4) > button {
 		margin-top: 0.5em;
 		margin-bottom: 0.5em;
 	}
-	#id_result_set tr > td:nth-child(4) > button:nth-child(3) {
-		margin-left: 2em;
+	#id_result_set tr > td:nth-child(4) > button:nth-child(1) {
+		margin-right: 2em;
 	}
 }
