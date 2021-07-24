@@ -56,8 +56,6 @@ the amount of vertical space used.
 
 https://github.com/rybak/esa-tweaks/raw/main/donations-process-bids-tweak.user.js
 
-### Shortcuts
-
 ## How to use ESA tweaks
 1. Install browser extensions for user scripts and user styles.
 2. Click on the link for the user script or user style in the sections above.

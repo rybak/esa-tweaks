@@ -1,14 +1,15 @@
 // ==UserScript==
 // @name         ESA donations :: shortcuts
-// @namespace    http://tampermonkey.net/
-// @version      1.0
 // @description  Shortcuts to help reading and screening donations on ESA
 // @author       https://github.com/rybak
 // @homepageURL  https://github.com/rybak/esa-tweaks
+// @updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-shortcuts.user.js
+// @version      1.1
 // @match        https://donations.esamarathon.com/admin/process_donations
 // @match        https://donations.esamarathon.com/admin/read_donations
 // @match        https://donations.esamarathon.com/admin/process_pending_bids
 // @icon         https://www.google.com/s2/favicons?domain=esamarathon.com
+// @namespace    http://tampermonkey.net/
 // @grant        none
 // ==/UserScript==
 

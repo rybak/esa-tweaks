@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name         ESA donations :: reverse event list order
-// @namespace    http://tampermonkey.net/
-// @version      1.0
 // @description  Makes it easier to get to the recent events on ESA website by reversing the default order of events.
 // @author       https://github.com/rybak
 // @homepageURL  https://github.com/rybak/esa-tweaks
+// @updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-reverse-event-lists.user.js
+// @version      1.1
 // @match        https://donations.esamarathon.com/*
 // @icon         https://www.google.com/s2/favicons?domain=esamarathon.com
+// @namespace    http://tampermonkey.net/
 // @grant        none
 // ==/UserScript==
 
