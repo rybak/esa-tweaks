@@ -1,8 +1,8 @@
 # ESA tweaks
 
 This is a collection of [user scripts](https://en.wikipedia.org/wiki/Userscript)
-and [user styles](https://en.wikipedia.org/wiki/Stylus_(browser_extension\)) for
-some pages of the https://donations.esamarathon.com website.
+and [user styles][WikipediaUserStyles] for some pages of the
+https://donations.esamarathon.com website.
 
 ## User styles
 
@@ -53,3 +53,5 @@ https://github.com/rybak/esa-tweaks/raw/main/donations-table-tweaks.user.css
 - Recommended – Stylus:
   - [Styles for Chrome/Chromium](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
   - [Styles for Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
+
+[WikipediaUserStyles]: https://en.wikipedia.org/wiki/Stylus_(browser_extension)
