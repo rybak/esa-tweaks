@@ -1,0 +1,35 @@
+@-moz-document url-prefix("https://donations.esamarathon.com/admin/process_pending_bids"), url-prefix("https://donations.esamarathon.com/admin/process_donations"), url-prefix("https://donations.esamarathon.com/admin/read_donations") {
+	/*
+	 * Dark mode for some pages used for donations screeners and readers.
+	 */
+
+	body {
+		background-color: black;
+		color: white;
+	}
+
+	a {
+		color: rgb(128, 196, 255);
+	}
+
+	input[type="number"],
+	input[type="text"], /* leave checkboxes as is */
+	select,
+	button:not([class]), /* leave buttons with existing classes as is */
+	textarea {
+		filter: invert(100%);
+	}
+
+	table,
+	td,
+	th {
+		/* ESA color 1 */
+		border-color: rgb(140, 62, 179);
+	}
+
+	th {
+		background-color: rgb(24, 24, 24);
+		/* ESA color 2 */
+		color: rgb(241, 147, 55);
+	}
+}

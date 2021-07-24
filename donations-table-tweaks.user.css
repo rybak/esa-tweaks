@@ -1,0 +1,19 @@
+@-moz-document
+url-prefix("https://donations.esamarathon.com/admin/process_pending_bids"),
+url-prefix("https://donations.esamarathon.com/admin/process_donations"),
+url-prefix("https://donations.esamarathon.com/admin/read_donations")
+{
+	/*
+	 * Minor (personal preference) tweaks for tables
+	 */
+
+table {
+	border-collapse: collapse;
+}
+
+#id_result_set {
+	margin-top: 40px !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+}

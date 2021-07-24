@@ -1,0 +1,29 @@
+@-moz-document url-prefix("https://donations.esamarathon.com/admin/process_donations") {
+	/*
+	 * Hide buttons, which should not be used.
+	 */
+tr > td:nth-child(4) > button.btn-warning {
+	display: none;
+}
+}
+
+@-moz-document url-prefix("https://donations.esamarathon.com/admin/process_donations") {
+	/*
+	 * Hide UI elements unnecessary for screening on /admin/process_donations
+	 */
+.container-fluid > *:nth-child(1),
+.container-fluid > *:nth-child(2),
+.container-fluid > *:nth-child(3),
+.container-fluid > *:nth-child(4),
+.container-fluid > *:nth-child(5),
+.container-fluid > *:nth-child(6),
+.container-fluid > *:nth-child(7),
+.container-fluid > *:nth-child(8) {
+	display: none;
+}
+
+.container-fluid > *:nth-child(9) {
+	margin-left: 40em;
+}
+}
+
