@@ -1,7 +1,8 @@
 # ESA tweaks
 This is a collection of [user scripts](https://en.wikipedia.org/wiki/Userscript)
 and [user styles][WikipediaUserStyles] for some pages of the
-https://donations.esamarathon.com website.
+https://donations.esamarathon.com website.  The source code is distributed under
+the terms of the MIT Licence. See [LICENSE.txt](LICENSE.txt) for details.
 
 ## User styles
 
