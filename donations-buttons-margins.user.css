@@ -13,24 +13,24 @@
 	 * Make buttons more user-friendly on /admin/process_pending_bids
 	 */
 
-	#id_result_set tr > td:nth-child(4) > button {
-		margin-top: 0.5em;
-		margin-bottom: 0.5em;
-	}
-	#id_result_set tr > td:nth-child(4) > button:nth-child(1) {
-		margin-right: 2em;
-	}
+#id_result_set tr > td:nth-child(4) > button {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+#id_result_set tr > td:nth-child(4) > button:nth-child(1) {
+	margin-right: 2em;
+}
 }
 
 @-moz-document url-prefix("https://donations.esamarathon.com/admin/process_donations") {
 	/*
 	 * Make buttons more user-friendly on /admin/process_donations
 	 */
-	#id_result_set tr > td:nth-child(4) > button {
-		margin-top: 0.5em;
-		margin-bottom: 0.5em;
-	}
-	#id_result_set tr > td:nth-child(4) > button:nth-child(1) {
-		margin-right: 2em;
-	}
+#id_result_set tr > td:nth-child(4) > button {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+#id_result_set tr > td:nth-child(4) > button:nth-child(1) {
+	margin-right: 2em;
+}
 }
