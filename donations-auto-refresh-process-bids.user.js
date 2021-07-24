@@ -14,10 +14,15 @@
 (function() {
 	'use strict';
 
+	/*
+	 * Constants configurable by user.
+	 */
 	const AUTO_REFRESH_DELAY_MILLIS = 5000;
+	const USE_ISO_8601 = false;
+
+	// same ID as builtin checkbox on process_donations for compatibility with shortcuts user scripts
 	const AUTO_REFRESH_CHECKBOX_ID = 'id_autoRefresh';
 	const LAST_REFRESH_TIME_DISPLAY_ID = 'esaTweaksLastAutoRefresh';
-	const USE_ISO_8601 = false;
 
 	function log(msg) {
 		console.log("[ESA auto-refresh processing bids] " + msg);
