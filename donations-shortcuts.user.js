@@ -5,6 +5,7 @@
 // @homepageURL  https://github.com/rybak/esa-tweaks
 // @updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-shortcuts.user.js
 // @version      1.1
+// @license      MIT; https://github.com/rybak/esa-tweaks/blob/main/LICENSE.txt
 // @match        https://donations.esamarathon.com/admin/process_donations
 // @match        https://donations.esamarathon.com/admin/read_donations
 // @match        https://donations.esamarathon.com/admin/process_pending_bids
