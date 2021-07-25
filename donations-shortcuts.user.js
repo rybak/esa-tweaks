@@ -44,7 +44,7 @@
 			// jQuery is loaded => print the version
 			log("jQuery version: " + jQuery.fn.jquery);
 		} else {
-			log("No jQuery detected");
+			warn("No jQuery detected");
 		}
 	}
 
