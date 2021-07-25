@@ -14,6 +14,10 @@
 (function() {
 	'use strict';
 
+	/*
+	 * Beware of layout of the table changing due to bids being different height and length.
+	 */
+
 	const DONATIONS_TABLE_ID = 'id_result_set';
 
 	function log(msg) {
@@ -24,6 +28,7 @@
 		console.warn("[ESA auto load bids][WARNING] " + msg);
 	}
 
+	// https://stackoverflow.com/a/11546242/1083697
 	var bidsAutoLoader = new MutationObserver((mutations) => {
 		var n = 0;
 		$('#' + DONATIONS_TABLE_ID + ' .bidcell button').each((i, button) => {
