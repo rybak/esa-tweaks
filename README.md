@@ -66,6 +66,8 @@ https://github.com/rybak/esa-tweaks/raw/main/donations-process-bids-tweak.user.j
 2. Click on the link for the user script or user style in the sections above.
    The corresponding browser extension will automatically recognize the filename
    extension in the link and prompt you for its installation.
+3. After installation, you can use the browser extension popup to disable or
+   enable individual scripts and styles if needed.
 
 # Browser extensions
 
