@@ -6,7 +6,7 @@ the terms of the MIT Licence. See [LICENSE.txt](LICENSE.txt) for details.
 
 ## User styles
 
-### Dark mode
+### Dark mode 🌞→🌚
 ![Dark mode demo screenshot](./screenshots/dark-mode.png)
 
 Dark mode for processing and reading pages with some ESAMarathon trademark
