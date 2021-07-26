@@ -31,6 +31,13 @@ Minor (personal preference) tweaks for tables on processing and reading pages.
 
 https://github.com/rybak/esa-tweaks/raw/main/donations-table-tweaks.user.css
 
+### Hide reading buttons
+As a precaution for donation screeners, hides buttons which should only be used
+by donation readers from the `/read_donations` page. Not useful for donation
+readers. 😉
+
+https://github.com/rybak/esa-tweaks/raw/main/donations-hide-reading-buttons.user.css
+
 ## User scripts
 
 ### Auto-refresh process bids
