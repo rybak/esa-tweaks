@@ -74,7 +74,8 @@ https://github.com/rybak/esa-tweaks/raw/main/donations-process-bids-tweak.user.j
    The corresponding browser extension will automatically recognize the filename
    extension in the link and prompt you for its installation.
 3. After installation, you can use the browser extension popup to disable or
-   enable individual scripts and styles if needed.
+   enable individual scripts and styles if needed.  For some scripts, you will
+   need to refresh the page (in browser) to remove effects of the script.
 
 # Browser extensions
 
