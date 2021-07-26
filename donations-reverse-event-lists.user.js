@@ -4,7 +4,7 @@
 // @author       https://github.com/rybak
 // @homepageURL  https://github.com/rybak/esa-tweaks
 // @updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-reverse-event-lists.user.js
-// @version      1.1
+// @version      1.2
 // @license      MIT; https://github.com/rybak/esa-tweaks/blob/main/LICENSE.txt
 // @match        https://donations.esamarathon.com/*
 // @icon         https://www.google.com/s2/favicons?domain=esamarathon.com
@@ -20,12 +20,14 @@
 	}
 
 	// https://stackoverflow.com/a/6973954/1083697
-	function reportJqueryVersion() {
+	function checkJqueryVersion() {
 		if (typeof jQuery != 'undefined') {
 			// jQuery is loaded => print the version
 			log("jQuery version: " + jQuery.fn.jquery);
+			return true;
 		} else {
-			log("[WARNING] No jQuery detected");
+			log("No jQuery detected");
+			return false;
 		}
 	}
 
@@ -41,8 +43,11 @@
 		log("Reversed " + message);
 	}
 
+	if (!checkJqueryVersion()) {
+		log("Aborting");
+		return;
+	}
 	// using jQuery already loaded by the website
-	reportJqueryVersion();
 
 	$(document).ready(() => {
 		if (document.location.href.endsWith("/events/")) {
@@ -61,7 +66,7 @@
 			reverseChildren($(".dropdown .dropdown-menu.small"), "Events dropdown");
 		}
 		reverseEventsDropdown();
-		
+
 		// TODO reverse list in bids filters
 	});
 
