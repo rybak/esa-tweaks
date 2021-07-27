@@ -38,6 +38,12 @@ readers. 😉
 
 https://github.com/rybak/esa-tweaks/raw/main/donations-hide-reading-buttons.user.css
 
+### Process bids layout tweak
+Removes linebreaks between UI elements on `/process_pending_bids` page to reduce
+the amount of vertical space used.
+
+https://github.com/rybak/esa-tweaks/raw/main/donations-process-bids-tweak.user.css
+
 ## User scripts
 
 ### Auto-refresh process bids
@@ -61,12 +67,6 @@ Reverses the lists of events, so that the most recent events are at the top of
 the list, which reduces the amount of scrolling needed.
 
 https://github.com/rybak/esa-tweaks/raw/main/donations-reverse-event-lists.user.js
-
-### Process bids layout tweak
-Removes linebreaks between UI elements on `/process_pending_bids` page to reduce
-the amount of vertical space used.
-
-https://github.com/rybak/esa-tweaks/raw/main/donations-process-bids-tweak.user.js
 
 ## How to use ESA tweaks
 1. Install browser extensions for user scripts and user styles.
