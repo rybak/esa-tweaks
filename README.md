@@ -52,7 +52,7 @@ https://github.com/rybak/esa-tweaks/raw/main/donations-auto-refresh-process-bids
 Adds following shortcuts to some pages:
 
 - `R` – refresh the table, same as button "Refresh"
-- `A` – flip the state of "Auto-refresh" checkbox
+- `A` – toggle "Auto-refresh" checkbox
 
 https://github.com/rybak/esa-tweaks/raw/main/donations-shortcuts.user.js
 

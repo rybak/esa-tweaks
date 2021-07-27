@@ -15,6 +15,8 @@
 (function() {
 	'use strict';
 
+	// TODO remember the setting on page reloads (localStorage?)
+
 	/*
 	 * Constants configurable by user.
 	 */
