@@ -44,16 +44,6 @@ the amount of vertical space used.
 
 https://github.com/rybak/esa-tweaks/raw/main/donations-process-bids-tweak.user.css
 
-### New donations notifications (beta)
-If auto-refresh is enabled, notifies the reader or screener about new donations.
-Remember to allow sound to be played and notifications to be shown in the website
-settings in your browser. The script keeps track of its settings for each subpage
-individually.
-
-![Notifications settings screenshot](./screenshots/donations-notifications.png)
-
-https://github.com/rybak/esa-tweaks/raw/main/donations-notifications.user.js
-
 ## User scripts
 
 ### Auto-refresh process bids
@@ -71,6 +61,16 @@ Adds following shortcuts to some pages:
 - `A` – toggle "Auto-refresh" checkbox
 
 https://github.com/rybak/esa-tweaks/raw/main/donations-shortcuts.user.js
+
+### New donations notifications (beta)
+If auto-refresh is enabled, notifies the reader or screener about new donations.
+Remember to allow sound to be played and notifications to be shown in the website
+settings in your browser. The script keeps track of its settings for each subpage
+individually.
+
+![Notifications settings screenshot](./screenshots/donations-notifications.png)
+
+https://github.com/rybak/esa-tweaks/raw/main/donations-notifications.user.js
 
 ### Reverse events lists
 Reverses the lists of events, so that the most recent events are at the top of
