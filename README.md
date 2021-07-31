@@ -78,6 +78,13 @@ the list, which reduces the amount of scrolling needed.
 
 https://github.com/rybak/esa-tweaks/raw/main/donations-reverse-event-lists.user.js
 
+### Index paging
+Adds paging links to indexes to switching to another page easier.
+
+![Index paging screenshot](./screenshots/index-paging.png)
+
+https://github.com/rybak/esa-tweaks/raw/main/donations-index-paging.user.js
+
 ## How to use ESA tweaks
 1. Install browser extensions for user scripts and user styles.
 2. Click on the link for the user script or user style in the sections above.
