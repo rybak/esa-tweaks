@@ -4,7 +4,7 @@
 // @author       https://github.com/rybak
 // @homepageURL  https://github.com/rybak/esa-tweaks
 // @updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-notifications.user.js
-// @version      0.1
+// @version      0.2
 // @match        https://donations.esamarathon.com/admin/process_donations
 // @match        https://donations.esamarathon.com/admin/read_donations
 // @match        https://donations.esamarathon.com/admin/process_pending_bids
@@ -250,6 +250,13 @@
 	}
 
 	function startRowsCounter() {
+		/*
+		 * Using count of rows to determine appearance of new donations means that we only notify user when
+		 * amount of donations changes.  However, if donations come quick enough, this check might fail.
+		 * For example: screener has two donations in the table, sends one to the reader, new donation comes in
+		 * with auto-refresh -- row count remains at two, despite the fact that a new donation appeared in the
+		 * table.  However, this isn't very likely and is not a concern at this point.
+		 */
 		currentRowsCount = countRows();
 		log("Started with " + currentRowsCount + " rows(s)");
 		checkRowsCountPeriodically(notifyAboutNewRowsCount, CHECK_PERIOD_MILLIS);
