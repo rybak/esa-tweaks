@@ -7,7 +7,7 @@ the terms of the MIT Licence. See [LICENSE.txt](LICENSE.txt) for details.
 ## User styles
 
 ### Dark mode 🌞→🌚
-![Dark mode demo screenshot](./screenshots/dark-mode.png)
+[![Dark mode demo screenshot](./screenshots/dark-mode.png)](https://github.com/rybak/esa-tweaks/raw/main/donations-dark-mode.user.css)
 
 Dark mode for processing and reading pages with some ESAMarathon trademark
 purple and yellow colours.
@@ -47,7 +47,7 @@ https://github.com/rybak/esa-tweaks/raw/main/donations-process-bids-tweak.user.c
 ## User scripts
 
 ### Auto-refresh process bids
-![Auto-refresh process bids screenshot](./screenshots/auto-refresh-process-bids.png)
+[![Auto-refresh process bids screenshot](./screenshots/auto-refresh-process-bids.png)](https://github.com/rybak/esa-tweaks/raw/main/donations-auto-refresh-process-bids.user.js)
 
 Adds a "Auto-refresh?" checkbox to the `/process_pending_bids` page, similar to
 the existing builtin checkbox on `/process_donations` page.
@@ -63,12 +63,12 @@ Adds following shortcuts to some pages:
 https://github.com/rybak/esa-tweaks/raw/main/donations-shortcuts.user.js
 
 ### New donations notifications (beta)
+[![Notifications settings screenshot](./screenshots/donations-notifications.png)](https://github.com/rybak/esa-tweaks/raw/main/donations-notifications.user.js)
+
 If auto-refresh is enabled, notifies the reader or screener about new donations.
 Remember to allow sound to be played and notifications to be shown in the website
 settings in your browser. The script keeps track of its settings for each subpage
 individually.
-
-![Notifications settings screenshot](./screenshots/donations-notifications.png)
 
 https://github.com/rybak/esa-tweaks/raw/main/donations-notifications.user.js
 
@@ -79,9 +79,9 @@ the list, which reduces the amount of scrolling needed.
 https://github.com/rybak/esa-tweaks/raw/main/donations-reverse-event-lists.user.js
 
 ### Index paging
-Adds paging links to indexes to switching to another page easier.
+[![Index paging screenshot](./screenshots/index-paging.png)](https://github.com/rybak/esa-tweaks/raw/main/donations-index-paging.user.js)
 
-![Index paging screenshot](./screenshots/index-paging.png)
+Adds paging links to indexes to switching to another page easier.
 
 https://github.com/rybak/esa-tweaks/raw/main/donations-index-paging.user.js
 
