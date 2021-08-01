@@ -62,7 +62,7 @@ Adds following shortcuts to some pages:
 
 https://github.com/rybak/esa-tweaks/raw/main/donations-shortcuts.user.js
 
-### New donations notifications (beta)
+### New donations notifications
 [![Notifications settings screenshot](./screenshots/donations-notifications.png)](https://github.com/rybak/esa-tweaks/raw/main/donations-notifications.user.js)
 
 If auto-refresh is enabled, notifies the reader or screener about new donations.
