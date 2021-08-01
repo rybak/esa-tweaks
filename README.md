@@ -81,7 +81,7 @@ https://github.com/rybak/esa-tweaks/raw/main/donations-reverse-event-lists.user.
 ### Index paging
 [![Index paging screenshot](./screenshots/index-paging.png)](https://github.com/rybak/esa-tweaks/raw/main/donations-index-paging.user.js)
 
-Adds paging links to indexes to switching to another page easier.
+Adds paging links to indexes to make switching to another page easier.
 
 https://github.com/rybak/esa-tweaks/raw/main/donations-index-paging.user.js
 
