@@ -4,7 +4,7 @@
 // @author       https://github.com/rybak
 // @homepageURL  https://github.com/rybak/esa-tweaks
 // @updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-shortcuts.user.js
-// @version      1.1
+// @version      1.2
 // @license      MIT; https://github.com/rybak/esa-tweaks/blob/main/LICENSE.txt
 // @match        https://donations.esamarathon.com/admin/process_donations
 // @match        https://donations.esamarathon.com/admin/read_donations
@@ -30,6 +30,9 @@
 	 * /read_donations have the same structure and use the same function
 	 * names and element IDs.
 	 */
+
+	const REFRESH_SHORTCUT_TEXT = "Shortcut: [R]";
+	const AUTOREFRESH_SHORTCUT_TEXT = "Shortcut: [A]";
 
 	function log(msg) {
 		console.log("[ESA shortcuts] " + msg);
@@ -89,6 +92,15 @@
 					break;
 			}
 		});
+
+		$('button').each((i, btn) => {
+			if($(btn).text() == 'Refresh') {
+				$(btn).prop('title', REFRESH_SHORTCUT_TEXT);
+				log("Set the title property for button");
+			}
+		});
+		$('#id_autoRefresh').prop('title', AUTOREFRESH_SHORTCUT_TEXT);
+		$('[for="id_autoRefresh"]').prop('title', AUTOREFRESH_SHORTCUT_TEXT);
 
 		log("Added shorcuts handler");
 
