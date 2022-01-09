@@ -4,7 +4,7 @@
 // @author       https://github.com/rybak
 // @homepageURL  https://github.com/rybak/esa-tweaks
 // @updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-notifications.user.js
-// @version      1.0
+// @version      1.1
 // @match        https://donations.esamarathon.com/admin/process_donations
 // @match        https://donations.esamarathon.com/admin/read_donations
 // @match        https://donations.esamarathon.com/admin/process_pending_bids
@@ -117,6 +117,14 @@
 		log("Volume slider has been added. Volume = " + volume);
 	}
 
+	function addTestNotificationButton(settingsPanel) {
+		const testButton = $('<button>Test</button>');
+		testButton.click(() => {
+			notifyUser("Test notification: " + createNotificationText(-42));
+		});
+		settingsPanel.append(testButton);
+	}
+
 	function addSettingsPanel() {
 		const settingsPanel = $('<div id="' + SETTINGS_PANEL_ID + '"></div>');
 		settingsPanel.append('<h3 style="margin-top:0;">Notifications</h3>');
@@ -133,6 +141,8 @@
 		});
 		settingsPanel.append('<br>');
 		addVolumeSlider(settingsPanel);
+		settingsPanel.append('<br>');
+		addTestNotificationButton(settingsPanel);
 		addSettingsPanelStyle();
 	}
 
@@ -227,17 +237,21 @@
 		askPermissionIfNeeded();
 	}
 
+	function notifyUser(notificationText) {
+		if (notificationEnabled) {
+			showNotification(notificationText);
+		}
+		if (soundEnabled) {
+			AUDIO.play();
+		}
+	}
+
 	function notifyAboutNewRowsCount(oldCount, newCount) {
 		const diff = newCount - oldCount;
 		if (diff <= 0) {
 			return;
 		}
-		if (notificationEnabled) {
-			showNotification(createNotificationText(diff));
-		}
-		if (soundEnabled) {
-			AUDIO.play();
-		}
+		notifyUser(createNotificationText(diff));
 	}
 
 	function initializeEsaDonationsNotifications() {
