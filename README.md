@@ -4,6 +4,25 @@ and [user styles][WikipediaUserStyles] for some pages of the
 https://donations.esamarathon.com website.  The source code is distributed under
 the terms of the MIT Licence. See [LICENSE.txt](LICENSE.txt) for details.
 
+* [ESA tweaks](#esa-tweaks)
+  * [User styles](#user-styles)
+    * [Dark mode 🌞→🌚](#dark-mode-)
+    * [Increase space between buttons](#increase-space-between-buttons)
+    * [Hide unused UI elements](#hide-unused-ui-elements)
+    * [Table tweaks](#table-tweaks)
+    * [Hide reading buttons](#hide-reading-buttons)
+    * [Process bids layout tweak](#process-bids-layout-tweak)
+  * [User scripts](#user-scripts)
+    * [Auto-refresh process bids](#auto-refresh-process-bids)
+    * [Shortcuts](#shortcuts)
+    * [New donations notifications](#new-donations-notifications)
+    * [Reverse events lists](#reverse-events-lists)
+    * [Index paging](#index-paging)
+  * [How to use ESA tweaks](#how-to-use-esa-tweaks)
+* [Browser extensions](#browser-extensions)
+  * [For scripts](#for-scripts)
+  * [For styles](#for-styles)
+
 ## User styles
 
 ### Dark mode 🌞→🌚
