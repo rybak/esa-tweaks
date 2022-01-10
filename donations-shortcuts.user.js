@@ -102,7 +102,7 @@
 		$('#id_autoRefresh').prop('title', AUTOREFRESH_SHORTCUT_TEXT);
 		$('[for="id_autoRefresh"]').prop('title', AUTOREFRESH_SHORTCUT_TEXT);
 
-		log("Added shorcuts handler");
+		log("Added shortcuts handler");
 
 	});
 })();
