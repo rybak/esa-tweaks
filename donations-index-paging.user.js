@@ -5,6 +5,7 @@
 // @homepageURL  https://github.com/rybak/esa-tweaks
 // @updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-index-paging.user.js
 // @version      1.0
+// @license      MIT; https://github.com/rybak/esa-tweaks/blob/main/LICENSE.txt
 // @match        https://donations.esamarathon.com/donors/*
 // @match        https://donations.esamarathon.com/donations/*
 // @icon         https://www.google.com/s2/favicons?domain=esamarathon.com
