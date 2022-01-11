@@ -18,6 +18,7 @@ the terms of the MIT Licence. See [LICENSE.txt](LICENSE.txt) for details.
     * [New donations notifications](#new-donations-notifications)
     * [Reverse events lists](#reverse-events-lists)
     * [Index paging](#index-paging)
+    * [Bids auto-expand](#bids-auto-expand)
   * [How to use ESA tweaks](#how-to-use-esa-tweaks)
 * [Browser extensions](#browser-extensions)
   * [For scripts](#for-scripts)
@@ -103,6 +104,14 @@ https://github.com/rybak/esa-tweaks/raw/main/donations-reverse-event-lists.user.
 Adds paging links to indexes to make switching to another page easier.
 
 https://github.com/rybak/esa-tweaks/raw/main/donations-index-paging.user.js
+
+### Bids auto-expand
+
+Automatically expands the bids on the page `/read_donations`. Saves clicking
+through every bid. Beware of layout of the table changing due to bids having
+different height and length.
+
+https://github.com/rybak/esa-tweaks/raw/main/donations-read-auto-load-bids.user.js
 
 ## How to use ESA tweaks
 1. Install browser extensions for user scripts and user styles.
