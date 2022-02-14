@@ -4,7 +4,7 @@
 // @author       https://github.com/rybak
 // @homepageURL  https://github.com/rybak/esa-tweaks
 // @updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-notifications.user.js
-// @version      1.1
+// @version      1.2
 // @license      MIT; https://github.com/rybak/esa-tweaks/blob/main/LICENSE.txt
 // @match        https://donations.esamarathon.com/admin/process_donations
 // @match        https://donations.esamarathon.com/admin/read_donations
@@ -32,6 +32,7 @@
 	const AUDIO_VOLUME_SLIDER_ID = 'esaTweaksNotificationsSoundVolume';
 	const NOTIFICATION_CHECKBOX_ID = 'esaTweaksNotificationsEnabled';
 	const SETTINGS_PANEL_ID = 'esaTweaksNotificationsSettings';
+	const TEST_BUTTON_ID = 'esaTweaksNotificationsTestButton';
 
 	var AUDIO;
 
@@ -119,11 +120,23 @@
 	}
 
 	function addTestNotificationButton(settingsPanel) {
-		const testButton = $('<button>Test</button>');
+		const testButton = $('<button id="' + TEST_BUTTON_ID + '">Test</button>');
 		testButton.click(() => {
 			notifyUser("Test notification: " + createNotificationText(-42));
+			updateTestButton();
 		});
 		settingsPanel.append(testButton);
+	}
+
+	function updateTestButton() {
+		var newText;
+		if (notificationEnabled || soundEnabled) {
+			newText = 'Test';
+		} else {
+			newText = 'Nothing to test - use checkboxes above';
+		}
+		log('New button text should be = ' + newText);
+		$('#' + TEST_BUTTON_ID).html(newText);
 	}
 
 	function addSettingsPanel() {
@@ -135,10 +148,12 @@
 		settingsPanel.append('<p>Notify about new donations/bids using:</p>');
 		addCheckbox(settingsPanel, 'Sound', SOUND_CHECKBOX_ID, (newValue) => {
 			soundEnabled = newValue;
+			updateTestButton();
 		});
 		settingsPanel.append('<br>');
 		addCheckbox(settingsPanel, 'Popup', NOTIFICATION_CHECKBOX_ID, (newValue) => {
 			notificationEnabled = newValue;
+			updateTestButton();
 		});
 		settingsPanel.append('<br>');
 		addVolumeSlider(settingsPanel);
