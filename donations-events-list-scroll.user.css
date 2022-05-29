@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name         ESA donations :: scroll for event list
+@author       https://github.com/rybak
+@homepageURL  https://github.com/rybak/esa-tweaks
+@updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-events-list-scroll.user.css
+@version      1
+@license      MIT; https://github.com/rybak/esa-tweaks/blob/main/LICENSE.txt
+@namespace    github.com/openstyles/stylus
+==/UserStyle== */
+
+@-moz-document domain("donations.esamarathon.com") {
+	.dropdown-menu {
+		max-height: 400px;
+		overflow: auto;
+	}
+}

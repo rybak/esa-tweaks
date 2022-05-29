@@ -12,6 +12,7 @@ the terms of the MIT Licence. See [LICENSE.txt](LICENSE.txt) for details.
     * [Table tweaks](#table-tweaks)
     * [Hide reading buttons](#hide-reading-buttons)
     * [Process bids layout tweak](#process-bids-layout-tweak)
+    * [Scroll for event lists](#scroll-for-event-lists)
   * [User scripts](#user-scripts)
     * [Auto-refresh process bids](#auto-refresh-process-bids)
     * [Shortcuts](#shortcuts)
@@ -63,6 +64,12 @@ Removes linebreaks between UI elements on `/process_pending_bids` page to reduce
 the amount of vertical space used.
 
 https://github.com/rybak/esa-tweaks/raw/main/donations-process-bids-tweak.user.css
+
+### Scroll for event lists
+Adds scrollbar to the dropdown menu with the list of events, which is too long
+on some screens
+
+https://github.com/rybak/esa-tweaks/raw/main/donations-events-list-scroll.user.css
 
 ## User scripts
 
