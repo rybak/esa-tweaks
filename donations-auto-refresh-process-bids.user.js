@@ -4,7 +4,7 @@
 // @author       https://github.com/rybak/
 // @homepageURL  https://github.com/rybak/esa-tweaks
 // @updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-auto-refresh-process-bids.user.js
-// @version      1.2
+// @version      1.3
 // @license      MIT; https://github.com/rybak/esa-tweaks/blob/main/LICENSE.txt
 // @match        https://donations.esamarathon.com/admin/process_pending_bids
 // @icon         https://www.google.com/s2/favicons?domain=esamarathon.com
@@ -36,12 +36,7 @@
 	}
 
 	function findRefreshButton() {
-		for (const b of document.getElementsByTagName('button')) {
-			if ($(b).text() == 'Refresh') {
-				return $(b);
-			}
-		}
-		return null;
+		return $('button:contains(Refresh)');
 	}
 
 	function refresh() {
