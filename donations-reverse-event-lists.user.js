@@ -4,12 +4,13 @@
 // @author       https://github.com/rybak
 // @homepageURL  https://github.com/rybak/esa-tweaks
 // @updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-reverse-event-lists.user.js
-// @version      1.2
+// @version      2.0
 // @license      MIT; https://github.com/rybak/esa-tweaks/blob/main/LICENSE.txt
 // @match        https://donations.esamarathon.com/*
 // @icon         https://www.google.com/s2/favicons?domain=esamarathon.com
 // @namespace    http://tampermonkey.net/
 // @grant        none
+// @require      https://code.jquery.com/jquery-3.6.0.min.js
 // ==/UserScript==
 
 /*
@@ -90,7 +91,11 @@ SOFTWARE.
 		}
 		reverseEventsDropdown();
 
-		// TODO reverse list in bids filters
+		if (document.location.href.includes("/admin/tracker/")) {
+			// https://stackoverflow.com/a/5441763/1083697
+			// https://api.jquery.com/contains-selector/
+			reverseChildren($('#changelist-filter h3:contains(By event)+ul'), "Filter in sidebar of admin interface");
+		}
 	});
 
 })();
