@@ -4,7 +4,7 @@
 // @author       https://github.com/rybak
 // @homepageURL  https://github.com/rybak/esa-tweaks
 // @updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-shortcuts.user.js
-// @version      1.2
+// @version      1.3
 // @license      MIT; https://github.com/rybak/esa-tweaks/blob/main/LICENSE.txt
 // @match        https://donations.esamarathon.com/admin/process_donations
 // @match        https://donations.esamarathon.com/admin/read_donations
@@ -93,12 +93,7 @@
 			}
 		});
 
-		$('button').each((i, btn) => {
-			if($(btn).text() == 'Refresh') {
-				$(btn).prop('title', REFRESH_SHORTCUT_TEXT);
-				log("Set the title property for button");
-			}
-		});
+		$('button:contains(Refresh)').prop('title', REFRESH_SHORTCUT_TEXT);
 		$('#id_autoRefresh').prop('title', AUTOREFRESH_SHORTCUT_TEXT);
 		$('[for="id_autoRefresh"]').prop('title', AUTOREFRESH_SHORTCUT_TEXT);
 
