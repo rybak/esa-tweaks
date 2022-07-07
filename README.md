@@ -138,7 +138,7 @@ https://github.com/rybak/esa-tweaks/raw/main/donations-read-auto-load-bids.user.
 
 ## For styles
 - Recommended – Stylus:
-  - [Styles for Chrome/Chromium](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
-  - [Styles for Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
+  - [Stylus for Chrome/Chromium](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
+  - [Stylus for Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
 
 [WikipediaUserStyles]: https://en.wikipedia.org/wiki/Stylus_(browser_extension)
