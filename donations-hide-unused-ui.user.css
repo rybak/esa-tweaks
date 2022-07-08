@@ -3,12 +3,15 @@
 @author       https://github.com/rybak
 @homepageURL  https://github.com/rybak/esa-tweaks
 @updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-hide-unused-ui.user.css
-@version      1.1
+@version      2
 @license      MIT; https://github.com/rybak/esa-tweaks/blob/main/LICENSE.txt
 @namespace    github.com/openstyles/stylus
 ==/UserStyle== */
 
-@-moz-document url-prefix("https://donations.esamarathon.com/admin/process_donations") {
+@-moz-document
+url-prefix("https://donations.esamarathon.com/admin/process_donations"),
+url-prefix("https://bsgmarathon.com/tracker/admin/process_donations")
+{
 	/*
 	 * Hide buttons, which should not be used.
 	 */
@@ -17,7 +20,10 @@ tr > td:nth-child(4) > button.btn-warning {
 }
 }
 
-@-moz-document url-prefix("https://donations.esamarathon.com/admin/process_donations") {
+@-moz-document
+url-prefix("https://donations.esamarathon.com/admin/process_donations"),
+url-prefix("https://bsgmarathon.com/tracker/admin/process_donations")
+{
 	/*
 	 * Hide UI elements unnecessary for screening on /admin/process_donations
 	 */

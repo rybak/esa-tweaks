@@ -3,7 +3,7 @@
 @author       https://github.com/rybak
 @homepageURL  https://github.com/rybak/esa-tweaks
 @updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-table-tweaks.user.css
-@version      1.1
+@version      2
 @license      MIT; https://github.com/rybak/esa-tweaks/blob/main/LICENSE.txt
 @namespace    github.com/openstyles/stylus
 ==/UserStyle== */
@@ -11,7 +11,11 @@
 @-moz-document
 url-prefix("https://donations.esamarathon.com/admin/process_pending_bids"),
 url-prefix("https://donations.esamarathon.com/admin/process_donations"),
-url-prefix("https://donations.esamarathon.com/admin/read_donations")
+url-prefix("https://donations.esamarathon.com/admin/read_donations"),
+
+url-prefix("https://bsgmarathon.com/tracker/admin/process_pending_bids"),
+url-prefix("https://bsgmarathon.com/tracker/admin/process_donations"),
+url-prefix("https://bsgmarathon.com/tracker/admin/read_donations")
 {
 	/*
 	 * Minor (personal preference) tweaks for tables
