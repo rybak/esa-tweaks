@@ -4,9 +4,10 @@
 // @author       https://github.com/rybak
 // @homepageURL  https://github.com/rybak/esa-tweaks
 // @updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-reverse-event-lists.user.js
-// @version      2.0
+// @version      3
 // @license      MIT; https://github.com/rybak/esa-tweaks/blob/main/LICENSE.txt
 // @match        https://donations.esamarathon.com/*
+// @match        https://bsgmarathon.com/tracker/*
 // @icon         https://www.google.com/s2/favicons?domain=esamarathon.com
 // @namespace    http://tampermonkey.net/
 // @grant        none

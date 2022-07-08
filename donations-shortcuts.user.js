@@ -4,11 +4,14 @@
 // @author       https://github.com/rybak
 // @homepageURL  https://github.com/rybak/esa-tweaks
 // @updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-shortcuts.user.js
-// @version      1.3
+// @version      2
 // @license      MIT; https://github.com/rybak/esa-tweaks/blob/main/LICENSE.txt
 // @match        https://donations.esamarathon.com/admin/process_donations
 // @match        https://donations.esamarathon.com/admin/read_donations
 // @match        https://donations.esamarathon.com/admin/process_pending_bids
+// @match        https://bsgmarathon.com/tracker/admin/process_donations
+// @match        https://bsgmarathon.com/tracker/admin/read_donations
+// @match        https://bsgmarathon.com/tracker/admin/process_pending_bids
 // @icon         https://www.google.com/s2/favicons?domain=esamarathon.com
 // @namespace    http://tampermonkey.net/
 // @grant        none
