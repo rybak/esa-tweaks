@@ -4,7 +4,7 @@
 // @author       https://github.com/rybak
 // @homepageURL  https://github.com/rybak/esa-tweaks
 // @updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-notifications.user.js
-// @version      2
+// @version      2.1
 // @license      MIT; https://github.com/rybak/esa-tweaks/blob/main/LICENSE.txt
 // @match        https://donations.esamarathon.com/admin/process_donations
 // @match        https://donations.esamarathon.com/admin/read_donations
@@ -23,7 +23,14 @@
 	const INITIAL_DELAY_MILLIS = 1000;
 	const CHECK_PERIOD_MILLIS = 5000;
 
-	const ICON_URL = 'https://esamarathon.com/wp-content/uploads/2020/02/european-speedrun-assembly-esa-logotype-66x66.png';
+	const ESA_ICON_URL = 'https://esamarathon.com/wp-content/uploads/2020/02/european-speedrun-assembly-esa-logotype-66x66.png';
+	const BSG_ICON_URL = 'https://bsgmarathon.com/images/bsglogo.png';
+	var ICON_URL = 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Information_icon_dark_green.svg/64px-Information_icon_dark_green.svg.png';
+	if (document.location.host.includes('esamarathon')) {
+		ICON_URL = ESA_ICON_URL;
+	} else if (document.location.host.includes('bsgmarathon')) {
+		ICON_URL = BSG_ICON_URL;
+	}
 	const SOUND_URL = 'https://upload.wikimedia.org/wikipedia/commons/9/91/Sound4.wav';
 	const DEFAULT_AUDIO_VOLUME_INT = 50;
 	const AUDIO_VOLUME_SCALE = 100.0;
