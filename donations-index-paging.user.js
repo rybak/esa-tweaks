@@ -4,7 +4,7 @@
 // @author       https://github.com/rybak
 // @homepageURL  https://github.com/rybak/esa-tweaks
 // @updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-index-paging.user.js
-// @version      2
+// @version      3
 // @license      MIT; https://github.com/rybak/esa-tweaks/blob/main/LICENSE.txt
 // @match        https://donations.esamarathon.com/donors/*
 // @match        https://donations.esamarathon.com/donations/*
@@ -35,21 +35,31 @@
 	 * Returns a list of lists of page numbers to use for given left-inclusive and
 	 * right-exclusive range [min, max).
 	 * If [min, max) interval is short enough, all page numbers will be returned in a single list.
-	 * If [min, max) is long, some of the page numbers in the middle of the interval will be skipped.
+	 * If [min, max) is long, some of the page numbers in the middle of the interval will be skipped, but some
+	 * milestones depending on the scale of `total` will be kept.
 	 *
 	 * Examples:
 	 * [1, 8) => [[1, 2, 3, 4, 5, 6, 7]]
-	 * [3, 20) => [[1, 2, 3], [17, 18, 19]]
+	 * [1, 250) => [[1, 2, 3], [50, 100, 150, 200], [247, 248, 249]]
 	 */
-	function abbreviatePageRange(min, max) {
+	function abbreviatePageRange(min, max, total) {
 		const n = max - min;
 		if (n <= 7) {
 			return [ range(min, max) ];
 		}
-		return [
-			range(min, min + PAGE_RANGE_ABBREV_SIZE),
-			range(max - PAGE_RANGE_ABBREV_SIZE, max)
-		];
+		var milestones = getMilestones(min + PAGE_RANGE_ABBREV_SIZE, max - PAGE_RANGE_ABBREV_SIZE, total);
+		if (milestones.length == 0) {
+			return [
+				range(min, min + PAGE_RANGE_ABBREV_SIZE),
+				range(max - PAGE_RANGE_ABBREV_SIZE, max)
+			];
+		} else {
+			return [
+				range(min, min + PAGE_RANGE_ABBREV_SIZE),
+				milestones,
+				range(max - PAGE_RANGE_ABBREV_SIZE, max)
+			];
+		}
 	}
 
 	function urlWithoutParams(location) {
@@ -70,6 +80,46 @@
 		).join(" ... ");
 	}
 
+	function getMilestones(min, max, n) {
+		if (n <= 50) {
+			return [];
+		}
+		var step;
+		// crude calculation for really big numbers
+		if (n >= 50000) {
+			step = Math.pow(10, Math.floor(Math.log10(n))) / 2;
+		}
+		// hand pickes numbers for smaller numbers
+		if (n > 10000 && n < 50000) {
+			step = 5000;
+		}
+		if (n > 5000 && n <= 10000) {
+			step = 1000;
+		}
+		if (n > 1000 && n <= 5000) {
+			step = 500;
+		}
+		if (n > 500 && n <= 1000) {
+			step = 100;
+		}
+		if (n > 100 && n <= 500) {
+			step = 50;
+		}
+		if (n > 50 && n <= 100) {
+			step = 10;
+		}
+		var milestones = [];
+		for (var i = step; i < max; i += step) {
+			if (i < min) {
+				// This could be a binary search, but because we control the scale, linear search is
+				// fine.  Linear search is simpler, therefore better.
+				continue;
+			}
+			milestones.push(i);
+		}
+		return milestones;
+	}
+
 	function addPageIndexing() {
 		const currentPage = parseInt($('#' + PAGE_SPINNER_ID).val(), 10);
 		if (isNaN(currentPage)) {
@@ -79,11 +129,14 @@
 		}
 		const minPage = parseInt($('#' + PAGE_SPINNER_ID).attr('min'), 10);
 		const maxPage = parseInt($('#' + PAGE_SPINNER_ID).attr('max'), 10);
+		const total = maxPage - minPage + 1;
 		const container = $('#' + PAGE_SPINNER_ID).parent().parent();
 
-		const left = abbreviatePageRange(minPage, currentPage);
-		const right = abbreviatePageRange(currentPage + 1, maxPage + 1);
+		const left = abbreviatePageRange(minPage, currentPage, total);
+		const right = abbreviatePageRange(currentPage + 1, maxPage + 1, total);
 
+		log(left);
+		log(right);
 		const leftHtml = pageRangesToLinks(left);
 		const rightHtml = pageRangesToLinks(right);
 		container.append(leftHtml).append(" " + currentPage + " ").append(rightHtml);
