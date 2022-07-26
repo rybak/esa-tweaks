@@ -4,7 +4,7 @@
 // @author       https://github.com/rybak
 // @homepageURL  https://github.com/rybak/esa-tweaks
 // @updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-big-highlighter.user.js
-// @version      1
+// @version      2
 // @license      MIT; https://github.com/rybak/esa-tweaks/blob/main/LICENSE.txt
 // @match        https://donations.esamarathon.com/admin/process_donations
 // @match        https://donations.esamarathon.com/admin/read_donations
@@ -20,7 +20,8 @@
 
 	const MAIN_TABLE_ID = 'id_result_set';
 	const BIG_DONOS_STYLE_ID = 'esaTweaksBigDonosStyle';
-	const HIGHLIGHT_STYLE = 'font-size: 300%;';
+	const HIGHLIGHT_STYLE_100 = 'font-size: 300%;';
+	const HIGHLIGHT_STYLE_500 = 'font-size: 500%; font-weight: 700;';
 
 	function log(msg) {
 		console.log("[ESA big donations] " + msg);
@@ -63,12 +64,19 @@
 					warn(`Could not parse ${cellText}`);
 					return;
 				}
-				// arbitrary amount of $100 for ESA and €100 for BSG
+				var highlightStyle = '';
 				if (amount >= 100) {
-					// `rowIndex` is weird a bit, because non-header rows are inside tbody => their
-					// indexes in `nth-child` selector are off by one
-					$(`#${BIG_DONOS_STYLE_ID}`).append('tr:nth-child(' + rowIndex + ') td:nth-child(2) { ' + HIGHLIGHT_STYLE + ' }');
+					highlightStyle = HIGHLIGHT_STYLE_100;
 				}
+				if (amount >= 500) {
+					highlightStyle = HIGHLIGHT_STYLE_500;
+				}
+				if (highlightStyle == '') {
+					return;
+				}
+				// `rowIndex` is weird a bit, because non-header rows are inside tbody => their
+				// indexes in `nth-child` selector are off by one
+				$(`#${BIG_DONOS_STYLE_ID}`).append('tr:nth-child(' + rowIndex + ') td:nth-child(2) { ' + highlightStyle + ' }');
 			});
 		});
 	}
