@@ -22,6 +22,7 @@ Licence. See [LICENSE.txt](LICENSE.txt) for details.
     * [Reverse events lists](#reverse-events-lists)
     * [Index paging](#index-paging)
     * [Bids auto-expand](#bids-auto-expand)
+    * [Big donations highlighter](#big-donations-highlighter)
   * [How to use ESA tweaks](#how-to-use-esa-tweaks)
 * [Browser extensions](#browser-extensions)
   * [For scripts](#for-scripts)
@@ -121,6 +122,12 @@ through every bid. Beware of layout of the table changing due to bids having
 different height and length.
 
 https://github.com/rybak/esa-tweaks/raw/main/donations-read-auto-load-bids.user.js
+
+### Big donations highlighter
+
+Increases the font-size of donations bigger than 100.
+
+https://github.com/rybak/esa-tweaks/raw/main/donations-big-highlighter.user.js
 
 ## How to use ESA tweaks
 1. Install browser extensions for user scripts and user styles.
