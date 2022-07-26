@@ -4,7 +4,7 @@
 // @author       https://github.com/rybak
 // @homepageURL  https://github.com/rybak/esa-tweaks
 // @updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-big-highlighter.user.js
-// @version      2
+// @version      3
 // @license      MIT; https://github.com/rybak/esa-tweaks/blob/main/LICENSE.txt
 // @match        https://donations.esamarathon.com/admin/process_donations
 // @match        https://donations.esamarathon.com/admin/read_donations
@@ -49,10 +49,10 @@
 		const style = `<style id="${BIG_DONOS_STYLE_ID}"></style>`;
 		$(style).appendTo($('body'));
 
-		$('#id_result_set tr').each((rowIndex, row) => {
+		$('#id_result_set > tbody > tr').each((rowIndex, row) => {
 			$(row).find("td:nth-child(2) a").each((i, cell) => {
 				const cellText = $(cell).text();
-				log(cellText);
+				log("Row: " + rowIndex + " amount: " + cellText);
 				const donationAmountRegex = new RegExp("[$](\\d+)[.]\\d+", "g");
 				const m = donationAmountRegex.exec(cellText);
 				if (!m || (m.length < 2)) {
@@ -74,9 +74,7 @@
 				if (highlightStyle == '') {
 					return;
 				}
-				// `rowIndex` is weird a bit, because non-header rows are inside tbody => their
-				// indexes in `nth-child` selector are off by one
-				$(`#${BIG_DONOS_STYLE_ID}`).append('tr:nth-child(' + rowIndex + ') td:nth-child(2) { ' + highlightStyle + ' }');
+				$(`#${BIG_DONOS_STYLE_ID}`).append('#' + MAIN_TABLE_ID + ' > tbody > tr:nth-child(' + (rowIndex + 1) + ') > td:nth-child(2) { ' + highlightStyle + ' }');
 			});
 		});
 	}
