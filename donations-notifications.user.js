@@ -4,7 +4,7 @@
 // @author       https://github.com/rybak
 // @homepageURL  https://github.com/rybak/esa-tweaks
 // @updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-notifications.user.js
-// @version      2.1
+// @version      2.2
 // @license      MIT; https://github.com/rybak/esa-tweaks/blob/main/LICENSE.txt
 // @match        https://donations.esamarathon.com/admin/process_donations
 // @match        https://donations.esamarathon.com/admin/read_donations
@@ -169,6 +169,7 @@
 		addVolumeSlider(settingsPanel);
 		settingsPanel.append('<br>');
 		addTestNotificationButton(settingsPanel);
+		settingsPanel.append('<p>Note: notifications only work when autorefresh is turned on.</p>');
 		addSettingsPanelStyle();
 	}
 
