@@ -23,6 +23,7 @@ Licence. See [LICENSE.txt](LICENSE.txt) for details.
     * [Index paging](#index-paging)
     * [Bids auto-expand](#bids-auto-expand)
     * [Big donations highlighter](#big-donations-highlighter)
+    * [Auto autorefresh](#auto-autorefresh)
   * [How to use ESA tweaks](#how-to-use-esa-tweaks)
 * [Browser extensions](#browser-extensions)
   * [For scripts](#for-scripts)
