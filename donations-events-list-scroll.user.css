@@ -3,14 +3,31 @@
 @author       https://github.com/rybak
 @homepageURL  https://github.com/rybak/esa-tweaks
 @updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-events-list-scroll.user.css
-@version      2
+@version      3
 @license      MIT; https://github.com/rybak/esa-tweaks/blob/main/LICENSE.txt
 @namespace    github.com/openstyles/stylus
 ==/UserStyle== */
 
+/*
+ * Scroll for the list of events on the public part of the tracker.
+ */
 @-moz-document domain("donations.esamarathon.com"), url-prefix("https://bsgmarathon.com/tracker/") {
 	.dropdown-menu {
 		max-height: 400px;
+		overflow: auto;
+	}
+}
+
+/*
+ * Scroll for the list in "Filter By event" in the admin part of the tracker.
+ */
+@-moz-document
+url-prefix("https://bsgmarathon.com/tracker/admin/tracker/bid/"), url-prefix("https://donations.esamarathon.com/admin/tracker/bid/"),
+url-prefix("https://bsgmarathon.com/tracker/admin/tracker/donation/"), url-prefix("https://donations.esamarathon.com/admin/tracker/donation/"),
+url-prefix("https://bsgmarathon.com/tracker/admin/tracker/donor/"), url-prefix("https://donations.esamarathon.com/admin/tracker/donor/")
+{
+	#changelist-filter > ul:nth-child(3) {
+		max-height: 240px;
 		overflow: auto;
 	}
 }
