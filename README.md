@@ -132,7 +132,8 @@ https://github.com/rybak/esa-tweaks/raw/main/donations-big-highlighter.user.js
 ### Auto autorefresh
 
 This script automatically turns "Autorefresh" on when all donations were
-processed or read.
+processed or read.  It helps people who turn off "Autorefresh" while clicking on
+the donations, and sometimes forget to turn it back on.
 
 https://github.com/rybak/esa-tweaks/raw/main/donations-auto-autorefresh.user.js
 
