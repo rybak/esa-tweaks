@@ -157,6 +157,13 @@ donations in euros.
 
 https://github.com/rybak/esa-tweaks/raw/main/donations-euro-signs.user.js
 
+## Autorefresh
+
+BSG's tracker lacks the Autorefresh feature added to ESA's tracker. This script is
+a client-side replacemenent for that.
+
+https://github.com/rybak/esa-tweaks/raw/main/donations-bsg-autorefresh.user.js
+
 # How to use ESA tweaks
 1. Install browser extensions for user scripts and user styles.
 2. Click on the link for the user script or user style in the sections above.

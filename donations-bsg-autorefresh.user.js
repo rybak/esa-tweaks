@@ -1,21 +1,21 @@
 // ==UserScript==
-// @name         ESA donations :: auto-refresh processing bids
-// @description  Add auto-refreshing for /admin/process_pending_bids
+// @name         [BSG] autorefresh
+// @description  Add autorefreshing for BSG tracker
 // @author       https://github.com/rybak/
 // @homepageURL  https://github.com/rybak/esa-tweaks
-// @updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-auto-refresh-process-bids.user.js
-// @version      3
+// @updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-bsg-autorefresh.user.js
+// @version      1
 // @license      MIT; https://github.com/rybak/esa-tweaks/blob/main/LICENSE.txt
-// @match        https://donations.esamarathon.com/admin/process_pending_bids
-// @icon         https://www.google.com/s2/favicons?domain=esamarathon.com
+// @match        https://bsgmarathon.com/tracker/admin/process_donations
+// @match        https://bsgmarathon.com/tracker/admin/read_donations
+// @match        https://bsgmarathon.com/tracker/admin/process_pending_bids
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=bsgmarathon.com
 // @namespace    http://tampermonkey.net/
 // @grant        none
 // ==/UserScript==
 
 (function() {
 	'use strict';
-
-	// TODO remember the setting on page reloads (localStorage?)
 
 	/*
 	 * Constants configurable by user.
@@ -28,11 +28,11 @@
 	const LAST_REFRESH_TIME_DISPLAY_ID = 'esaTweaksLastAutoRefresh';
 
 	function log(msg) {
-		console.log("[ESA auto-refresh processing bids] " + msg);
+		console.log("[BSG autorefresh] " + msg);
 	}
 
 	function warn(msg) {
-		console.warn("[ESA auto-refresh processing bids][WARNING] " + msg);
+		console.warn("[ESA autorefresh][WARNING] " + msg);
 	}
 
 	function findRefreshButton() {
@@ -42,7 +42,7 @@
 	function refresh() {
 		try {
 			log("Refreshing...");
-			// runSearch is defined in ESA's JS scripts
+			// runSearch is defined in tracker's JS scripts
 			runSearch();
 		} catch (e) {
 			warn("Could not 'Refresh' this page " + e);
