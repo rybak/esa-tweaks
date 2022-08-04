@@ -24,7 +24,8 @@ Licence. See [LICENSE.txt](LICENSE.txt) for details.
     * [Bids auto-expand](#bids-auto-expand)
     * [Big donations highlighter](#big-donations-highlighter)
     * [Auto autorefresh](#auto-autorefresh)
-  * [How to use ESA tweaks](#how-to-use-esa-tweaks)
+* [BSG tweaks](#bsg-tweaks)
+* [How to use ESA tweaks](#how-to-use-esa-tweaks)
 * [Browser extensions](#browser-extensions)
   * [For scripts](#for-scripts)
   * [For styles](#for-styles)
@@ -138,7 +139,25 @@ the donations, and sometimes forget to turn it back on.
 
 https://github.com/rybak/esa-tweaks/raw/main/donations-auto-autorefresh.user.js
 
-## How to use ESA tweaks
+# BSG tweaks
+
+The following scripts are specific to the Benelux Speedrunner Gathering
+donations tracker, which has slightly different setup.
+
+## Force regular mode
+
+Forces "regular" processing mode on `/process_donations`
+
+https://github.com/rybak/esa-tweaks/raw/main/donations-process-force-regular-mode.user.js
+
+## Euro signs
+
+Converts hardcoded dollar signs into euro signs for events, which gather
+donations in euros.
+
+https://github.com/rybak/esa-tweaks/raw/main/donations-euro-signs.user.js
+
+# How to use ESA tweaks
 1. Install browser extensions for user scripts and user styles.
 2. Click on the link for the user script or user style in the sections above.
    The corresponding browser extension will automatically recognize the filename

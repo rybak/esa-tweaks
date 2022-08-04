@@ -1,9 +1,12 @@
 // ==UserScript==
 // @name         [BSG] Euro signs
-// @namespace    http://tampermonkey.net/
-// @version      1
 // @description  Replaces dollar signs with euro signs for marathons that take donations in euros.
-// @author       Andrei Rybak
+// @author       https://github.com/rybak
+// @homepageURL  https://github.com/rybak/esa-tweaks
+// @updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-euro-signs.user.js
+// @version      2
+// @license      MIT; https://github.com/rybak/esa-tweaks/blob/main/LICENSE.txt
+// @namespace    http://tampermonkey.net/
 // @match        https://donations.esamarathon.com/admin/read_donations*
 // @match        https://donations.esamarathon.com/admin/process_donations*
 // @match        https://bsgmarathon.com/tracker/admin/process_donations
