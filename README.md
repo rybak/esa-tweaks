@@ -35,8 +35,8 @@ Licence. See [LICENSE.txt](LICENSE.txt) for details.
 ### Dark mode 🌞→🌚
 [![Dark mode demo screenshot](./screenshots/dark-mode.png)](https://github.com/rybak/esa-tweaks/raw/main/donations-dark-mode.user.css)
 
-Dark mode for processing and reading pages with some ESAMarathon trademark
-purple and yellow colours.
+Dark mode for processing and reading pages with some ESA and BSG trademark
+colors.
 
 https://github.com/rybak/esa-tweaks/raw/main/donations-dark-mode.user.css
 
