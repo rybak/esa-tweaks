@@ -3,9 +3,10 @@
 // @description  Add auto-refreshing for /admin/process_pending_bids
 // @author       https://github.com/rybak/
 // @homepageURL  https://github.com/rybak/esa-tweaks
-// @version      3
+// @version      4
 // @license      MIT; https://github.com/rybak/esa-tweaks/blob/main/LICENSE.txt
 // @match        https://donations.esamarathon.com/admin/process_pending_bids
+// @match        https://uksg.esamarathon.com/admin/process_pending_bids
 // @icon         https://www.google.com/s2/favicons?domain=esamarathon.com
 // @namespace    http://tampermonkey.net/
 // @grant        none

@@ -1,8 +1,9 @@
 # ESA tweaks
 This is a collection of [user scripts](https://en.wikipedia.org/wiki/Userscript)
 and [user styles][WikipediaUserStyles] for some pages of the donations trackers
-used by [ESA](https://donations.esamarathon.com) and
-[Benelux Speedrunner Gathering](https://bsgmarathon.com/tracker/).
+used by [ESA](https://donations.esamarathon.com),
+[Benelux Speedrunner Gathering](https://bsgmarathon.com/tracker/), and
+[United Kingdom Speedrunner Gathering](https://uksg.esamarathon.com).
 
 The source code is distributed under the terms of the MIT Licence. See
 [LICENSE.txt](LICENSE.txt) for details.

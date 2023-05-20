@@ -2,13 +2,14 @@
 @name         ESA donations :: hide unused UI elements
 @author       https://github.com/rybak
 @homepageURL  https://github.com/rybak/esa-tweaks
-@version      3
+@version      4
 @license      MIT; https://github.com/rybak/esa-tweaks/blob/main/LICENSE.txt
 @namespace    github.com/openstyles/stylus
 ==/UserStyle== */
 
 @-moz-document
 url-prefix("https://donations.esamarathon.com/admin/process_donations"),
+url-prefix("https://uksg.esamarathon.com/admin/process_donations"),
 url-prefix("https://bsgmarathon.com/tracker/admin/process_donations")
 {
 	/*
