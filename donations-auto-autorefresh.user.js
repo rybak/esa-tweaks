@@ -3,7 +3,6 @@
 // @description  Automatically enables autorefresh when table of donations becomes empty
 // @author       https://github.com/rybak
 // @homepageURL  https://github.com/rybak/esa-tweaks
-// @updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-auto-autorefresh.user.js
 // @version      1
 // @license      MIT; https://github.com/rybak/esa-tweaks/blob/main/LICENSE.txt
 // @match        https://donations.esamarathon.com/admin/process_donations

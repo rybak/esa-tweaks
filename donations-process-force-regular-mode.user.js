@@ -4,7 +4,6 @@
 // @description  Automatically switches processing mode to "Regular"
 // @author       https://github.com/rybak
 // @homepageURL  https://github.com/rybak/esa-tweaks
-// @updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-process-force-regular-mode.user.js
 // @version      3
 // @license      MIT; https://github.com/rybak/esa-tweaks/blob/main/LICENSE.txt
 // @match        https://bsgmarathon.com/tracker/admin/process_donations

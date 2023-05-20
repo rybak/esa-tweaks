@@ -3,7 +3,6 @@
 // @description  Add autorefreshing for BSG tracker
 // @author       https://github.com/rybak/
 // @homepageURL  https://github.com/rybak/esa-tweaks
-// @updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-bsg-autorefresh.user.js
 // @version      1
 // @license      MIT; https://github.com/rybak/esa-tweaks/blob/main/LICENSE.txt
 // @match        https://bsgmarathon.com/tracker/admin/process_donations

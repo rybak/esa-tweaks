@@ -3,7 +3,6 @@
 // @description  Add auto-refreshing for /admin/process_pending_bids
 // @author       https://github.com/rybak/
 // @homepageURL  https://github.com/rybak/esa-tweaks
-// @updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-auto-refresh-process-bids.user.js
 // @version      3
 // @license      MIT; https://github.com/rybak/esa-tweaks/blob/main/LICENSE.txt
 // @match        https://donations.esamarathon.com/admin/process_pending_bids

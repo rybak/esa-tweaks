@@ -3,7 +3,6 @@
 // @description  Adds links to quickly switch between pages of public indexes at donations.esamarathon.com
 // @author       https://github.com/rybak
 // @homepageURL  https://github.com/rybak/esa-tweaks
-// @updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-index-paging.user.js
 // @version      3
 // @license      MIT; https://github.com/rybak/esa-tweaks/blob/main/LICENSE.txt
 // @match        https://donations.esamarathon.com/donors/*

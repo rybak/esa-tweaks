@@ -3,7 +3,6 @@
 // @description  Replaces dollar signs with euro signs for marathons that take donations in euros.
 // @author       https://github.com/rybak
 // @homepageURL  https://github.com/rybak/esa-tweaks
-// @updateURL    https://github.com/rybak/esa-tweaks/raw/main/donations-euro-signs.user.js
 // @version      3
 // @license      MIT; https://github.com/rybak/esa-tweaks/blob/main/LICENSE.txt
 // @namespace    http://tampermonkey.net/
