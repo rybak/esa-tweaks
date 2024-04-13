@@ -4,8 +4,9 @@
 // @description  Automatically switches processing mode to "Regular"
 // @author       https://github.com/rybak
 // @homepageURL  https://github.com/rybak/esa-tweaks
-// @version      4
+// @version      5
 // @license      MIT; https://github.com/rybak/esa-tweaks/blob/main/LICENSE.txt
+// @match        https://tracker.bsgmarathon.com/admin/process_donations
 // @match        https://bsgmarathon.com/tracker/admin/process_donations
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=bsgmarathon.com
 // @grant        none

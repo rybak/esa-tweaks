@@ -3,10 +3,11 @@
 // @description  Automatically expands the "Bids" column on page /read_donations
 // @author       https://github.com/rybak
 // @homepageURL  https://github.com/rybak/esa-tweaks
-// @version      3
+// @version      4
 // @license      MIT; https://github.com/rybak/esa-tweaks/blob/main/LICENSE.txt
 // @match        https://donations.esamarathon.com/admin/read_donations
 // @match        https://uksg.esamarathon.com/admin/read_donations
+// @match        https://tracker.bsgmarathon.com/admin/read_donations
 // @match        https://bsgmarathon.com/tracker/admin/read_donations
 // @icon         https://www.google.com/s2/favicons?domain=esamarathon.com
 // @namespace    http://tampermonkey.net/

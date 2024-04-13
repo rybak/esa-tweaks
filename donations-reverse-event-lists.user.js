@@ -3,10 +3,11 @@
 // @description  Makes it easier to get to the recent events on ESA website by reversing the default order of events.
 // @author       https://github.com/rybak
 // @homepageURL  https://github.com/rybak/esa-tweaks
-// @version      4
+// @version      5
 // @license      MIT; https://github.com/rybak/esa-tweaks/blob/main/LICENSE.txt
 // @match        https://donations.esamarathon.com/*
 // @match        https://uksg.esamarathon.com/*
+// @match        https://tracker.bsgmarathon.com/*
 // @match        https://bsgmarathon.com/tracker/*
 // @icon         https://www.google.com/s2/favicons?domain=esamarathon.com
 // @namespace    http://tampermonkey.net/

@@ -2,7 +2,7 @@
 @name         ESA donations :: hide reading buttons for screeners
 @author       https://github.com/rybak
 @homepageURL  https://github.com/rybak/esa-tweaks
-@version      3
+@version      4
 @license      MIT; https://github.com/rybak/esa-tweaks/blob/main/LICENSE.txt
 @namespace    github.com/openstyles/stylus
 ==/UserStyle== */
@@ -10,6 +10,7 @@
 @-moz-document
 url-prefix("https://donations.esamarathon.com/admin/read_donations"),
 url-prefix("https://uksg.esamarathon.com/admin/read_donations"),
+url-prefix("https://tracker.bsgmarathon.com/admin/read_donations"),
 url-prefix("https://bsgmarathon.com/tracker/admin/read_donations")
 {
 	#id_result_set td:nth-child(4) button {
